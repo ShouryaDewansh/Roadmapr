@@ -16,14 +16,24 @@ lib64/
 parts/
 sdist/
 var/
-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+.env
 
-# Virtual Environment
-venv/
-ENV/
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Database
+*.db
+*.sqlite3
 
 # IDE
 .idea/
@@ -31,24 +41,11 @@ ENV/
 *.swp
 *.swo
 
-# Environment variables
-.env
-
-# Database
-*.db
-*.sqlite3
-
-# Node
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Build
-build/
-dist/
-coverage/
-
 # OS
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db 

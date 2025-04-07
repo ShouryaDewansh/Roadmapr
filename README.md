@@ -1,28 +1,26 @@
 # Roadmapr - AI-Powered Learning Path Generator
 
-Roadmapr is a full-stack web application that helps users create personalized learning roadmaps for any skill or topic. It uses AI to generate structured learning paths with modules and resources.
+Roadmapr is a web application that helps users create personalized learning paths for various topics. It generates structured roadmaps with curated resources to guide your learning journey.
 
 ## Features
 
-- 🤖 AI-powered learning path generation
-- 📚 Structured modules and resources
-- 🎯 Skill level customization
-- 📱 Modern, responsive UI
-- 🔄 Real-time progress tracking
-- 📝 Resource management
+- Create custom learning paths for any topic
+- Get structured modules with curated resources
+- Track your progress through the learning path
+- Clean and intuitive user interface
+- Predefined templates for popular topics
 
 ## Tech Stack
 
 ### Frontend
-- React.js
+- React
 - TypeScript
 - Material-UI
-- React Router
+- TailwindCSS
 
 ### Backend
 - FastAPI
 - SQLAlchemy
-- OpenAI API
 - SQLite
 
 ## Getting Started
@@ -30,57 +28,39 @@ Roadmapr is a full-stack web application that helps users create personalized le
 ### Prerequisites
 - Python 3.8+
 - Node.js 14+
-- OpenAI API key
+- npm or yarn
 
-### Installation
+### Backend Setup
+1. Navigate to the backend directory:
+   ```bash
+   cd roadmapr/backend
+   ```
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Start the server:
+   ```bash
+   uvicorn main:app --reload --host 0.0.0.0 --port 8000
+   ```
 
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/roadmapr.git
-cd roadmapr
-```
+### Frontend Setup
+1. Navigate to the frontend directory:
+   ```bash
+   cd roadmapr/frontend
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm start
+   ```
 
-2. Set up the backend:
-```bash
-cd roadmapr/backend
-pip install -r requirements.txt
-```
-
-3. Set up environment variables:
-```bash
-cp .env.example .env
-# Edit .env with your OpenAI API key
-```
-
-4. Set up the frontend:
-```bash
-cd ../frontend
-npm install
-```
-
-### Running the Application
-
-1. Start the backend server:
-```bash
-cd roadmapr/backend
-uvicorn main:app --reload --host 0.0.0.0 --port 8000
-```
-
-2. Start the frontend development server:
-```bash
-cd roadmapr/frontend
-npm start
-```
-
-3. Open your browser and navigate to `http://localhost:3000`
-
-## API Documentation
-
-The API documentation is available at `http://localhost:8000/docs` when the backend server is running.
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
+The application will be available at:
+- Frontend: http://localhost:3000
+- Backend API: http://localhost:8000
 
 ## License
 
